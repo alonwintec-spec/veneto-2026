@@ -66,6 +66,15 @@
   .stop.hasbg h3::after{content:' ℹ️';font-size:11px;opacity:.45}
   .stop .bg{display:none;margin-top:8px;padding:9px 12px;border-radius:10px;background:var(--soft);font-size:13px;line-height:1.55;color:#3F4450;font-weight:300}
   .stop.open .bg{display:block}
+  .contact{margin-top:9px;background:#F0FDFA;border:1.5px solid #99F6E4;border-radius:10px;padding:9px 12px;font-size:13px;line-height:1.75}
+  .contact a{color:var(--laguna);font-weight:600;text-decoration:none}
+  .pcard{border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:14px;background:#fff}
+  .pcard h3{font-family:'Rubik';font-weight:800;font-size:17px;margin-bottom:2px}
+  .pcard .sub{font-size:12.5px;color:var(--muted);font-weight:300;margin-bottom:8px}
+  .person{padding:9px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.6}
+  .person b{font-family:'Rubik';font-weight:600}
+  .person small{color:var(--muted);font-weight:300}
+  .person a{color:var(--laguna);font-weight:500;text-decoration:none;margin-inline-end:10px}
   .warn{margin-top:9px;background:#FFF7ED;border:1.5px solid #FDBA74;border-radius:10px;padding:9px 12px;font-size:13px;line-height:1.55}
   .card{border:1px solid var(--line);border-radius:14px;padding:15px 16px;margin-bottom:14px;background:#fff}
   .card a{color:var(--main)}
@@ -132,7 +141,7 @@
       <h1>אלון וברקן · ציריך ← ונטו</h1>
       <div class="dates">ראשון 1.11 – שלישי 3.11.2026 · Astec · Fabbio · Bettio</div>
     </div>
-    <button class="refreshbtn" id="refreshbtn">🔄 1.0</button>
+    <button class="refreshbtn" id="refreshbtn">🔄 1.1</button>
   </div>
   <div class="homebase">🤝 יום שני 2.11: 09:00 Astec · 11:00 Fabbio Design · 15:00 Bettio<br>🕐 שוויץ ואיטליה: שעה אחת אחרי ישראל</div>
 </header>
@@ -212,14 +221,16 @@
         <h3>🏭 Astec · Dosson di Casier</h3>
         <div class="desc">ספק השבזי וקוק (פרופילי ברונזה ופליז). Via Ezio Tarantelli 17, Casier (TV).</div>
         <div class="warn">⚠️ <b>09:00 כמעט בלתי אפשרי:</b> נחיתה ב-08:40, יציאה מהמטוס, אולי מזוודות, רכב, ועוד 25 דקות נסיעה. מציאותי: <b>~09:45</b>. כדאי לעדכן את Astec, או לטוס עם תיק יד בלבד ולהזמין נהג שימתין ביציאה.</div>
-        <div class="bg">📖 על השולחן: עיכובי הייצור בשבזי 11 (דלת 137 והמשקופים החיצוניים), מכולה שמועמסת ב-30.10, והפתחים החסרים בברונזה בהרב קוק.</div>
+        <div class="bg">📖 על השולחן: לסגור את מועדי האספקה של שבזי 11 (דלת 137 והמשקופים החיצוניים, מכולה שמועמסת ב-30.10) ושל הרב קוק. רוסאנו ביקש מברקן סדר יום מראש.</div>
+        <div class="contact">👤 <b>Rossano Fiamengo</b>, מנהל · <a href="tel:+393486652181">‎+39 348 665 2181</a><br>👤 <b>Ilenia Berton</b>, מכירות · <a href="tel:+3904221763509">‎+39 0422 176 3509</a></div>
         <a class="maplink" href="https://www.google.com/maps/dir/?api=1&origin=Venice+Marco+Polo+Airport&destination=Via+Ezio+Tarantelli+17+Casier+TV&travelmode=driving">מהשדה ל-Astec</a>
       </div>
       <div class="stop big">
         <div class="time">11:00</div>
         <h3>🪟 Fabbio Design · San Biagio di Callalta</h3>
         <div class="desc">יצרנית חלונות ודלתות עץ. Via Leonardo da Vinci 1, San Biagio di Callalta (TV). כ-25 דקות מ-Astec.</div>
-        <div class="tags"><span class="tag todo">לוודא: «פאביו דזיין» = Fabbio Design?</span></div>
+        <div class="tags"><span class="tag ok">מתיאו אישר את הביקור</span><span class="tag todo">ברקן כתב להם 11:30, לעדכן ל-11:00</span></div>
+        <div class="contact">👤 <b>Matteo Zanin</b>, מנהל מכירות · <a href="tel:+393487043155">‎+39 348 704 3155</a><br>👤 <b>Giorgio Pavan</b>, מנהל טכני · <a href="tel:+393479691123">‎+39 347 969 1123</a><br>☎️ משרד · <a href="tel:+390422608179">‎+39 0422 60 81 79</a></div>
         <a class="maplink" href="https://www.google.com/maps/dir/?api=1&origin=Via+Ezio+Tarantelli+17+Casier+TV&destination=Via+Leonardo+da+Vinci+1+San+Biagio+di+Callalta+TV&travelmode=driving">מ-Astec ל-Fabbio</a>
       </div>
       <div class="stop">
@@ -231,7 +242,8 @@
         <div class="time">15:00</div>
         <h3>🦟 Bettio · Marcon</h3>
         <div class="desc">רשתות נגד יתושים. הנושא: <b>הרכבה של Neoscenica בישראל</b>. Via dell'Artigianato 9, Marcon (VE), כ-25 דקות מ-San Biagio ו-10 דקות משדה התעופה.</div>
-        <div class="tags"><span class="tag todo">ברקן ביקש 15:30 במייל, ואין במייל אישור: לוודא את השעה</span></div>
+        <div class="warn">⚠️ <b>אין אישור מ-Bettio.</b> ברקן ביקש במייל 15:30. המייל נשלח ל-e.balbi@<b>battio</b>.it, כתובת עם שגיאת כתיב (צריך להיות bettio), כך שלאניו כנראה לא הגיע. העותק ל-info@bettio.it כן נשלח. כדאי להתקשר.</div>
+        <div class="contact">👤 <b>Ennio Balbi</b> (פגשנו בתערוכת MADE) · <a href="mailto:e.balbi@bettio.it">e.balbi@bettio.it</a><br>☎️ משרד · <a href="tel:+390415951443">‎+39 041 595 1443</a> (מספר ממאגר עסקי, לוודא)</div>
         <a class="maplink" href="https://www.google.com/maps/dir/?api=1&origin=Via+Leonardo+da+Vinci+1+San+Biagio+di+Callalta+TV&destination=Bettio+Via+dell%27Artigianato+9+Marcon+VE&travelmode=driving">מ-Fabbio ל-Bettio</a>
       </div>
       <div class="stop big">
@@ -304,14 +316,50 @@
     <div class="card">
       <div class="check" data-k="t1"><div class="box">✓</div><div class="txt">ברקן: לשלוח את מסלול הטיסות לציריך ובחזרה ✈️<small>שעות ומספרי טיסה, מתוך ה-PDF של ה-e-ticket</small></div></div>
       <div class="check" data-k="t2"><div class="box">✓</div><div class="txt">לעדכן את Astec על שעת הגעה ריאלית ⏰<small>נחיתה ב-08:40, הגעה בערך ב-09:45</small></div></div>
-      <div class="check" data-k="t3"><div class="box">✓</div><div class="txt">לקבל מ-Bettio אישור לשעת הפגישה 🦟<small>במייל ביקשנו 15:30, ובתוכנית כתוב 15:00</small></div></div>
-      <div class="check" data-k="t4"><div class="box">✓</div><div class="txt">לוודא את השם והכתובת של Fabbio Design 🪟</div></div>
+      <div class="check" data-k="t3"><div class="box">✓</div><div class="txt">להתקשר ל-Bettio ולקבל אישור לפגישה 🦟<small>אין תשובה מהם. ביקשנו 15:30, ובתוכנית 15:00. המייל לאניו נשלח לכתובת עם שגיאת כתיב (battio)</small></div></div>
+      <div class="check" data-k="t4"><div class="box">✓</div><div class="txt">לעדכן את Fabbio על 11:00 🪟<small>ברקן כתב להם 11:30–12:00</small></div></div>
       <div class="check" data-k="t5"><div class="box">✓</div><div class="txt">מלון בציריך, ליד השדה 🏨</div></div>
       <div class="check" data-k="t6"><div class="box">✓</div><div class="txt">מלון באזור ונציה או Mestre 🏨</div></div>
       <div class="check" data-k="t7"><div class="box">✓</div><div class="txt">רכב שכור מ-VCE, או נהג ליום 🚗<small>באיטליה מומלץ רישיון נהיגה בינלאומי</small></div></div>
       <div class="check" data-k="t8"><div class="box">✓</div><div class="txt">צ׳ק-אין ב-SWISS ✈️<small>נפתח 23 שעות לפני כל טיסה · <a href="https://www.swiss.com/">swiss.com</a> או אפליקציית SWISS</small></div></div>
       <div class="check" data-k="t9"><div class="box">✓</div><div class="txt">ביטוח נסיעות 🛡️</div></div>
       <div class="check" data-k="t10"><div class="box">✓</div><div class="txt">חומרים לפגישות 💼<small>Astec: לוח זמנים לשבזי וקוק · Bettio: מה צריך להרכבה של Neoscenica בארץ</small></div></div>
+    </div>
+  </main>
+</div>
+
+<!-- ================= VIEW: CONTACTS ================= -->
+<div class="view" id="view-people">
+  <main style="padding:20px 18px">
+    <h2 class="h2v">אנשי קשר 👥</h2>
+
+    <div class="pcard">
+      <h3>🏭 Astec · 09:00</h3>
+      <div class="sub">Via Ezio Tarantelli 17, Dosson di Casier (TV) · משרד <a href="tel:+390422490183">‎+39 0422 490183</a> · astec.it</div>
+      <div class="person"><b>Rossano Fiamengo</b> <small>· מנהל</small><br><a href="tel:+393486652181">📱 ‎+39 348 665 2181</a><a href="tel:+3904221763506">☎️ ‎+39 0422 176 3506</a><br><a href="mailto:rossano.fiamengo@astec.it">rossano.fiamengo@astec.it</a></div>
+      <div class="person"><b>Ilenia Berton</b> <small>· מחלקה מסחרית, איתה ההתכתבות השוטפת</small><br><a href="tel:+3904221763509">☎️ ‎+39 0422 176 3509</a><br><a href="mailto:ilenia.berton@astec.it">ilenia.berton@astec.it</a></div>
+      <div class="person"><b>Lorenzo Fiamengo</b><br><a href="mailto:lorenzo.fiamengo@astec.it">lorenzo.fiamengo@astec.it</a></div>
+    </div>
+
+    <div class="pcard">
+      <h3>🪟 Fabbio Design · 11:00</h3>
+      <div class="sub">Via L. da Vinci 1, San Biagio di Callalta (TV) · משרד <a href="tel:+390422608179">‎+39 0422 60 81 79</a> · fabbiodesign.com</div>
+      <div class="person"><b>Luigino Fabbio</b> <small>· הבעלים</small><br><a href="mailto:luigino.fabbio@fabbiodesign.com">luigino.fabbio@fabbiodesign.com</a></div>
+      <div class="person"><b>Matteo Zanin</b> <small>· מנהל מכירות, אישר את הביקור</small><br><a href="tel:+393487043155">📱 ‎+39 348 704 3155</a><br><a href="mailto:matteo.zanin@fabbiodesign.com">matteo.zanin@fabbiodesign.com</a></div>
+      <div class="person"><b>Giorgio Pavan</b> <small>· מנהל טכני (פרויקט לידור רועי)</small><br><a href="tel:+393479691123">📱 ‎+39 347 969 1123</a><br><a href="mailto:giorgio.pavan@fabbiodesign.com">giorgio.pavan@fabbiodesign.com</a></div>
+      <div class="person"><b>Sara Casarin</b><br><a href="mailto:sara.casarin@fabbiodesign.com">sara.casarin@fabbiodesign.com</a></div>
+    </div>
+
+    <div class="pcard">
+      <h3>🦟 Bettio · 15:00</h3>
+      <div class="sub">Via dell'Artigianato 9, Marcon (VE) · bettio.it</div>
+      <div class="person"><b>Ennio Balbi</b> <small>· הציג לנו את Neoscenica בתערוכת MADE</small><br><a href="mailto:e.balbi@bettio.it">e.balbi@bettio.it</a><br><small>⚠️ ברקן שלח לו לכתובת battio.it, עם שגיאת כתיב</small></div>
+      <div class="person"><b>משרד</b><br><a href="tel:+390415951443">☎️ ‎+39 041 595 1443</a> <small>(ממאגר עסקי, לוודא)</small><br><a href="mailto:info@bettio.it">info@bettio.it</a></div>
+    </div>
+
+    <div class="pcard">
+      <h3>🇮🇱 שלנו</h3>
+      <div class="person"><b>ווינטק · משרד</b><br><a href="tel:+97298355999">☎️ ‎09-8355999</a></div>
     </div>
   </main>
 </div>
@@ -338,10 +386,11 @@
   </main>
 </div>
 
-<footer>נבנה עם קלוד · אוקטובר 2026 · נסיעה טובה! ✈️ · גרסה 1.0</footer>
+<footer>נבנה עם קלוד · אוקטובר 2026 · נסיעה טובה! ✈️ · גרסה 1.1</footer>
 
 <div class="bottomnav">
   <button class="bn active" data-view="view-days"><span class="ic">🗓</span>מסלול</button>
+  <button class="bn" data-view="view-people"><span class="ic">👥</span>אנשי קשר</button>
   <button class="bn" data-view="view-map"><span class="ic">🗺️</span>מפה</button>
   <button class="bn" data-view="view-weather"><span class="ic">🌦️</span>מזג אוויר</button>
   <button class="bn" data-view="view-todo"><span class="ic">✅</span>משימות</button>
