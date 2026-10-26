@@ -1,5 +1,5 @@
 // veneto-2026 service worker — offline shell + map tiles
-const SHELL_CACHE = 'vnt-shell-v5';
+const SHELL_CACHE = 'vnt-shell-v6';
 const TILE_CACHE = 'vnt-tiles-v1';
 const ASSET_CACHE = 'vnt-assets-v1';
 
